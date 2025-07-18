@@ -16,3 +16,4 @@ data = {"name": ["Alice", "Bob", "Charlie"],
 df3 = pd.DataFrame(data)
 df3.to_csv("info.csv", index=False, encoding="utf-8")
 print("DataFrame saved to info.csv")
+
