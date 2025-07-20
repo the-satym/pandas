@@ -11,11 +11,20 @@ df= pd.read_csv("marks_final.csv")
 
 #operations on columns
 #selecting a specific column
-column = df['ROLL NUMBER', 'SNO.']
+column = df[['ROLL NUMBER', 'SNO.']]
 print(column)
 
+print(df["ROLL NUMBER"])
 
 #filter rows based on a condition
+
+rows = df[(df['SNO.']>1000) & (df['SNO.']<1050)]
+rows = df[(df['SNO.']>1000) | (df['SNO.']<1050)]
+rows2 = df[df['ROLL NUMBER'] == 102203794]
+
+print(rows)
+print(rows2)
+
 
 
 #combine multiple conditions
